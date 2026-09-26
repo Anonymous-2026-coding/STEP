@@ -7,7 +7,7 @@ Trained on unpaired wild-type spatial snapshots, STEP is a generative framework 
    state, and propagates the edited state through the frozen WT path.
 
 
-<img width="1602" height="679" alt="42f27962aaba9c8c3d406f5d85956f45" src="https://github.com/user-attachments/assets/42e5232a-7ed6-4724-949d-7e48d6c5006f" />
+<img width="1546" height="656" alt="image" src="https://github.com/user-attachments/assets/88012f44-d8be-445b-864c-338379555218" />
 
 
 ## Install
