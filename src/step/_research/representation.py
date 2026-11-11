@@ -1,4 +1,3 @@
-"""Version-local editable representation used by CADENCE v17."""
 from __future__ import annotations
 
 from dataclasses import dataclass
