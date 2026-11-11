@@ -1,0 +1,15 @@
+{
+  "seed": 6120,
+  "smoke": false,
+  "query_count": 80,
+  "aggregation": "mean units within target, then equal mean over targets",
+  "pearson": 0.060498692496167454,
+  "spearman": 0.03814659886264219,
+  "rmse": 0.5201289928718758,
+  "auprc": 0.3087067603645879,
+  "residual": 0.44517859295010564,
+  "norm_ratio": 0.4033747950325584,
+  "configuration": "configs/static_mouse.json",
+  "reference_device": "cuda",
+  "pytorch": "2.2.2+cu121"
+}

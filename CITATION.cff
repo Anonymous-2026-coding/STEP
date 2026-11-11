@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "STEP: Self-Supervised Editable Transport for Counterfactual Spatiotemporal Gene Perturbations"
+message: "Please cite the STEP manuscript when using this software."
+type: software
+authors:
+  - name: "STEP authors"
+version: 0.3.0

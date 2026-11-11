@@ -1,0 +1,395 @@
+{
+  "dataset": "limb_xenium",
+  "files": [
+    {
+      "file": "fold_0.npz",
+      "bytes": 207005,
+      "sha256": "f45446858c966b9f1d492d5260a9ab2da17a6016087dd432cf673db1c74afaf4",
+      "arrays": {
+        "expression": {
+          "shape": [
+            6,
+            180,
+            98
+          ],
+          "dtype": "float64"
+        },
+        "coordinates": {
+          "shape": [
+            6,
+            180,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "names": {
+          "shape": [
+            6
+          ],
+          "dtype": "<U9"
+        },
+        "masses": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "train": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "source": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "target": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            98
+          ],
+          "dtype": "<U8"
+        },
+        "task": {
+          "shape": [],
+          "dtype": "<U13"
+        }
+      }
+    },
+    {
+      "file": "fold_1.npz",
+      "bytes": 209300,
+      "sha256": "400eba43161f2ae7438d87815ff65eeb256fba49c043cd9ecfafc37f94c0ca07",
+      "arrays": {
+        "expression": {
+          "shape": [
+            6,
+            180,
+            98
+          ],
+          "dtype": "float64"
+        },
+        "coordinates": {
+          "shape": [
+            6,
+            180,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "names": {
+          "shape": [
+            6
+          ],
+          "dtype": "<U9"
+        },
+        "masses": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "train": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "source": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "target": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            98
+          ],
+          "dtype": "<U8"
+        },
+        "task": {
+          "shape": [],
+          "dtype": "<U13"
+        }
+      }
+    },
+    {
+      "file": "fold_2.npz",
+      "bytes": 208887,
+      "sha256": "25e532236ed99c1ee4fb90f98764921ea8ee70c69a562cbcdfbe8ab7950e0d8e",
+      "arrays": {
+        "expression": {
+          "shape": [
+            6,
+            180,
+            98
+          ],
+          "dtype": "float64"
+        },
+        "coordinates": {
+          "shape": [
+            6,
+            180,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "names": {
+          "shape": [
+            6
+          ],
+          "dtype": "<U9"
+        },
+        "masses": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "train": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "source": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "target": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            98
+          ],
+          "dtype": "<U8"
+        },
+        "task": {
+          "shape": [],
+          "dtype": "<U13"
+        }
+      }
+    },
+    {
+      "file": "fold_3.npz",
+      "bytes": 208858,
+      "sha256": "71a7d139d816b5b93c7499c948b72519a9518043d1e11d6af6da307cd63c80eb",
+      "arrays": {
+        "expression": {
+          "shape": [
+            6,
+            180,
+            98
+          ],
+          "dtype": "float64"
+        },
+        "coordinates": {
+          "shape": [
+            6,
+            180,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "names": {
+          "shape": [
+            6
+          ],
+          "dtype": "<U9"
+        },
+        "masses": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "train": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "source": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "target": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            98
+          ],
+          "dtype": "<U8"
+        },
+        "task": {
+          "shape": [],
+          "dtype": "<U13"
+        }
+      }
+    },
+    {
+      "file": "fold_4.npz",
+      "bytes": 209203,
+      "sha256": "1d50c114e88b563c07f20aef8778f6062a1966118273f95148f03da666350d60",
+      "arrays": {
+        "expression": {
+          "shape": [
+            6,
+            180,
+            98
+          ],
+          "dtype": "float64"
+        },
+        "coordinates": {
+          "shape": [
+            6,
+            180,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "names": {
+          "shape": [
+            6
+          ],
+          "dtype": "<U9"
+        },
+        "masses": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "train": {
+          "shape": [
+            4
+          ],
+          "dtype": "int64"
+        },
+        "source": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "target": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            98
+          ],
+          "dtype": "<U8"
+        },
+        "task": {
+          "shape": [],
+          "dtype": "<U13"
+        }
+      }
+    },
+    {
+      "file": "fold_5.npz",
+      "bytes": 209491,
+      "sha256": "ac43a571e6f3f40721ad6ff6369eecdb8292702501971cab9dd65633953dbe15",
+      "arrays": {
+        "expression": {
+          "shape": [
+            6,
+            180,
+            98
+          ],
+          "dtype": "float64"
+        },
+        "coordinates": {
+          "shape": [
+            6,
+            180,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "names": {
+          "shape": [
+            6
+          ],
+          "dtype": "<U9"
+        },
+        "masses": {
+          "shape": [
+            6
+          ],
+          "dtype": "int64"
+        },
+        "train": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "source": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "target": {
+          "shape": [],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            98
+          ],
+          "dtype": "<U8"
+        },
+        "task": {
+          "shape": [],
+          "dtype": "<U13"
+        }
+      }
+    }
+  ]
+}

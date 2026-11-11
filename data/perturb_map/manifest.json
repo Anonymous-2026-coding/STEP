@@ -1,0 +1,125 @@
+{
+  "dataset": "perturb_map",
+  "files": [
+    {
+      "file": "evaluation.npz",
+      "bytes": 3790,
+      "sha256": "36f5ef45cad0ec128de440d4e1c1f54a9314844f4dd7a61b0cb52a27bd907441",
+      "arrays": {
+        "observed_effect": {
+          "shape": [
+            4,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "scale": {
+          "shape": [
+            4,
+            128
+          ],
+          "dtype": "float64"
+        },
+        "genes": {
+          "shape": [
+            128
+          ],
+          "dtype": "<U8"
+        },
+        "targets": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U6"
+        },
+        "units": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U15"
+        }
+      }
+    },
+    {
+      "file": "queries.npz",
+      "bytes": 18667,
+      "sha256": "89804614a1f52475a5755833cc224d73550326626827435dc8de8179b35b8d84",
+      "arrays": {
+        "expression": {
+          "shape": [
+            80,
+            4,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "adjacency": {
+          "shape": [
+            80,
+            4,
+            4
+          ],
+          "dtype": "float32"
+        },
+        "group_index": {
+          "shape": [
+            80
+          ],
+          "dtype": "int64"
+        },
+        "genes": {
+          "shape": [
+            128
+          ],
+          "dtype": "<U8"
+        },
+        "targets": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U6"
+        },
+        "units": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U15"
+        }
+      }
+    },
+    {
+      "file": "wt.npz",
+      "bytes": 374712,
+      "sha256": "37ddda7e7554a66d94eb1a08d251f49c72f2da61a1f50c6542dd1648a23676a2",
+      "arrays": {
+        "expression": {
+          "shape": [
+            1061,
+            128
+          ],
+          "dtype": "float32"
+        },
+        "coordinates": {
+          "shape": [
+            1061,
+            2
+          ],
+          "dtype": "float32"
+        },
+        "adjacency": {
+          "shape": [
+            1061,
+            1061
+          ],
+          "dtype": "float32"
+        },
+        "genes": {
+          "shape": [
+            128
+          ],
+          "dtype": "<U8"
+        }
+      }
+    }
+  ]
+}
