@@ -1,8 +1,3 @@
-"""Version-local relational unbalanced transport for CADENCE v17.
-
-This copy is intentionally kept inside ``cadence.v17`` so the v17 runtime has
-no dependency on any historical CADENCE package.
-"""
 from __future__ import annotations
 
 import numpy as np
