@@ -1,8 +1,4 @@
-"""Instrument the submitted Euler edit operator without final output overwrite.
 
-Support distances are descriptive kNN diagnostics, not probabilities of validity.
-Projection schedules are in physical time, separate from solver discretization.
-"""
 from dataclasses import dataclass
 import math
 import numpy as np
