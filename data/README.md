@@ -30,9 +30,8 @@ representation and should not be counted as biological replicates.
 | `fold_4.npz` | Forecasting | 10 dpa | 7 dpa | uninjured, 3, 5, 7 dpa |
 | `fold_5.npz` | Forecasting | 14 dpa | 10 dpa | uninjured, 3, 5, 7, 10 dpa |
 
-Use `configs/wt_limb.json`, seed **6121**, for both tasks. Reference fold means
-are in `limb_xenium/reference_metrics.json` and in the main README. The example
-trains all six models from scratch; it does not ship trained checkpoints.
+Use `configs/wt_limb.json`, for both tasks. The example
+trains all six models from scratch.
 
 ## Perturb-map: spatial mouse lung KO responses
 
@@ -58,13 +57,10 @@ row is edited. There are 20 queries per group:
 | Tgfbr2 | GSM5808057_KP_4 |
 | Jak2 | GSM5808054_KP_1 |
 
-Use `configs/static_mouse.json`, seed **6120**. The model fits `wt.npz` only,
+Use `configs/static_mouse.json`. The model fits `wt.npz` only,
 then generates predictions from the control-derived patches. The example
 opens `evaluation.npz` after prediction. It excludes the edited gene from
 scoring, averages sections within each target and then weights targets equally.
-The reference response AUPRC is **0.3087**; additional single-seed metrics are
-in `perturb_map/reference_metrics.json`. Reference scores for both examples use
-CUDA. CPU execution is supported; its seeded training draws differ from CUDA.
 
 The quick start writes `query.npz` for the general perturbation/GRN CLI, as well
 as predictions, a raw decoder-target projection trace, per-unit scores and a
@@ -75,6 +71,4 @@ dimensionless; these data are not an observed temporal KO series.
 
 Each dataset's `manifest.json` records file sizes, SHA256 hashes and NPZ array
 schemas. Run `python scripts/verify_release.py` from the repository root to
-check them. Reference metrics use one selected configuration/seed per example,
-rather than a mean over model initializations. Exact values can vary with
-hardware and numerical library versions.
+check them.
