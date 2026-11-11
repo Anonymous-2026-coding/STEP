@@ -188,13 +188,9 @@ step grn --model outputs/my_static/model.pt --data my_query.npz \
   --time 0 --regulators Tgfbr2 Jak2 --output outputs/my_grn
 ```
 
-## Quick start: two bundled real datasets
+## Quick start: two real datasets
 
-The following commands train the neural models from scratch using the supplied
-single-seed configurations. No private paths, external downloads or saved
-research checkpoints are required. Reference scores below use **CUDA** with the
-tested environment above. Use `--device cpu` for a CPU run; CPU and CUDA random
-draws differ, so the same seed can produce a different fitted model. Omitting
+The following commands train the neural models from scratch. Omitting
 `--device` selects CUDA when available and CPU otherwise.
 
 ### 1. Limb Xenium: WT interpolation and forecasting
@@ -204,16 +200,7 @@ python examples/wt_limb.py --device cuda
 ```
 
 This uses the prepared 98-gene panel, 180 representative particles per stage,
-all four interpolation folds and both one-step forecast folds. One configuration
-and seed **6121** are shared across the two tasks. The reference results are:
-
-| Task | Pearson ↑ | Spearman ↑ | RMSE ↓ | DE AUPRC ↑ | SWD ↓ |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Interpolation, four-fold mean | 0.6757 | 0.6413 | 0.1203 | 0.5109 | 0.2261 |
-| Forecasting, two-fold mean | 0.2913 | 0.2352 | 0.1285 | 0.2925 | 0.2137 |
-
-Results appear in `outputs/limb/summary.csv`, with each fold's metrics,
-predictions, resolved configuration and trained model in its own subdirectory.
+all four interpolation folds and both one-step forecast folds.
 To run only one task, add `--task interpolation` or `--task extrapolation`.
 To run a single prepared fold through the generic interface:
 
@@ -230,13 +217,11 @@ python examples/perturb_mouse.py --device cuda
 
 This fits the stationary model on **1,061 KP control spots and 128 genes**, then
 runs all **80 local queries** for `Tgfbr2` and `Jak2` across four eligible
-target/section groups. Seed **6120** gives a reference response AUPRC of
-**0.3087**, averaging sections within each target, then targets equally. The
-reference raw decoder-target residual is **0.4452**. Evaluation excludes the
+target/section groups. Evaluation excludes the
 edited gene and uses measured KO responses only after predictions are complete.
 
 Outputs in `outputs/perturb_map/` include per-section and per-target metrics,
-paired WT/edited response predictions, a projection residual trace, a checkpoint,
+paired WT/edited response predictions, a projection residual trace,
 and a two-regulator GRN example. The script also writes a query file that can be
 used directly with the generic interfaces:
 
@@ -247,8 +232,7 @@ step grn --model outputs/perturb_map/model.pt --data outputs/perturb_map/query.n
   --time 0 --regulators Tgfbr2 Jak2 --output outputs/lung_grn
 ```
 
-Both examples use selected reference seeds/configurations, rather than averages
-over initializations. Numerical results can vary with hardware and library
+Numerical results can vary with hardware and library
 versions. Data descriptions and checksums are in [data/README.md](data/README.md).
 
 ## Outputs and evaluation
@@ -266,7 +250,7 @@ correct up/down direction. `src/step/metrics.py` provides these metrics.
 | --- | --- |
 | `src/step/` | Public API, IO, CLI, preprocessing, metrics and neural implementation |
 | `configs/` | Single-run model settings for the evaluated assays |
-| `examples/` | Two complete examples using bundled real data |
+| `examples/` | Two complete examples using real data |
 | `data/` | Compact Limb Xenium and Perturb-map inputs, descriptions and checksums |
 | `docs/data_format.md` | Preparing and loading your own data |
 | `tests/` | Neural transport, editing, persistence and interface checks |
