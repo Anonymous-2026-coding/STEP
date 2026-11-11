@@ -58,7 +58,7 @@ class _LatentFlow(nn.Module):
 
 
 class EditableRepresentation:
-    """Self-contained v17 representation/latent-edit implementation."""
+    """Self-contained representation/latent-edit implementation."""
     def __init__(self, genes, time_min, time_max, config):
         if time_max <= time_min: raise ValueError("time_max must exceed time_min")
         self.genes = int(genes); self.time_min = float(time_min); self.time_scale = float(time_max - time_min); self.config = config; self.fitted_ = False
