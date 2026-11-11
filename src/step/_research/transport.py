@@ -27,7 +27,7 @@ def unbalanced_relational_sinkhorn(
     entropy: float = 0.08,
     marginal_relaxation: float = 1.0,
 ):
-    """Compute the v17 KL-relaxed relational transport plan."""
+    """Compute the KL-relaxed relational transport plan."""
     n, m = len(source_latent), len(target_latent)
     expression_cost = cdist(np.asarray(source_latent, dtype=float), np.asarray(target_latent, dtype=float), metric="sqeuclidean")
     relation_cost = cdist(np.asarray(source_relation, dtype=float), np.asarray(target_relation, dtype=float), metric="sqeuclidean")
