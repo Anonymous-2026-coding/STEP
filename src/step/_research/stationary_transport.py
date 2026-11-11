@@ -1,4 +1,3 @@
-"""Historical v9 relational transport implementation."""
 from __future__ import annotations
 
 import numpy as np
