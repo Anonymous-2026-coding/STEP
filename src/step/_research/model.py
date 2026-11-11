@@ -87,7 +87,7 @@ class _MassWeightedFlow(nn.Module):
 
 
 class CADENCEV17(EditableRepresentation):
-    """Self-contained v17 mass-weighted, endpoint-consistent latent flow."""
+    """Self-contained mass-weighted, endpoint-consistent latent flow."""
 
     def __init__(self, genes: int, time_min: float, time_max: float, config: V17Config = V17Config()):
         self.v17_config = config
