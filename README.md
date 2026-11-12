@@ -41,7 +41,7 @@ GPU execution is recommended for training. Commands below run from the repositor
 | **Zebrafish heart Stereo-seq** | WT interpolation and forecasting | [Li et al., Nature Communications, 2025](https://doi.org/10.1038/s41467-025-59070-0); non-imputed Stereo-seq regeneration data linked in the publication | uninjured; 6/12 hours and 1/3/7/14/28 days post-amputation |
 | Perturb-DBiT, HT29 | Static spatial perturbation | [GSE319277](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319277), [official data/code](https://github.com/abaysoy/Perturb_DBiT) | GSM9514752 / Bru.LC.6 |
 | **Perturb-map, mouse lung cancer** | Static spatial perturbation; bundled quick start | [GSE193460](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE193460), Dhainaut et al., Cell, 2022 | GSM5808054–GSM5808057 |
-| SPAC-seq | Dynamic spatial perturbation | [CRA023189](https://ngdc.cncb.ac.cn/gsa/browse/CRA023189), [data portal](https://spac.pku-genomics.org), [official code](https://github.com/zenglab-pku/SPAC-seq) | T-cell Day 4 and Day 7 |
+| SPAC-seq | Dynamic spatial perturbation | [Zhang et al., Cell, 2026](https://www.cell.com/cell/fulltext/S0092-8674(26)00516-7), [data portal](https://spac.pku-genomics.org), [official code](https://github.com/zenglab-pku/SPAC-seq) | T-cell Day 4 and Day 7 |
 | ZESTA, zebrafish embryogenesis | Spatiotemporal perturbation / GRN analysis | [ZESTA](https://db.cngb.org/stomics/zesta/), [Liu et al., Developmental Cell, 2022](https://doi.org/10.1016/j.devcel.2022.04.009) | 3.3, 5.25, 10, 12, 18, 24 hours post-fertilization |
 
 Only the compact, prepared **Limb Xenium** and **Perturb-map** example inputs are
