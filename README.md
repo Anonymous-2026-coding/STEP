@@ -44,9 +44,7 @@ GPU execution is recommended for training. Commands below run from the repositor
 | SPAC-seq | Dynamic spatial perturbation | [Zhang et al., Cell, 2026](https://www.cell.com/cell/fulltext/S0092-8674(26)00516-7), [data portal](https://spac.pku-genomics.org), [official code](https://github.com/zenglab-pku/SPAC-seq) | T-cell Day 4 and Day 7 |
 | ZESTA, zebrafish embryogenesis | Spatiotemporal perturbation / GRN analysis | [ZESTA](https://db.cngb.org/stomics/zesta/), [Liu et al., Developmental Cell, 2022](https://doi.org/10.1016/j.devcel.2022.04.009) | 3.3, 5.25, 10, 12, 18, 24 hours post-fertilization |
 
-Only the compact, prepared **Limb Xenium** and **Perturb-map** example inputs are
-bundled. Download the other assays from their original sources and prepare them
-using the common input format below. Cite the original studies when using their data.
+The code repository has prepared the Limb Xenium and Perturb-map sample inputs. Download the other assays from their original sources and prepare them using the common input format below. Cite the original studies when using their data.
 
 ## Preparing your data
 
@@ -174,8 +172,7 @@ grn = model.extract_grn(
 Rows are target genes and columns are the requested regulators. Values are
 finite-difference sensitivities of the local decoded one-step map, averaged
 over the supplied spatial patch. Self-edges are zeroed by default. These model
-sensitivities provide a context-specific regulatory hypothesis, not a causal
-validation. `StaticSTEP` exposes the same interface.
+sensitivities provide a context-specific regulatory hypothesis. `StaticSTEP` exposes the same interface.
 
 The command-line equivalents use a saved model and a prepared query NPZ:
 
@@ -241,8 +238,7 @@ WT Pearson/Spearman compare signed population-mean changes relative to the
 source. DE AUPRC ranks absolute changes against the observed top decile; RMSE
 measures population-mean error and SWD compares particle distributions using
 128 fixed projections. Perturbation AUPRC uses the same absolute-response
-ranking after excluding the edited gene. A high AUPRC alone does not establish
-correct up/down direction. `src/step/metrics.py` provides these metrics.
+ranking after excluding the edited gene. `src/step/metrics.py` provides these metrics.
 
 ## Repository layout
 
@@ -254,8 +250,3 @@ correct up/down direction. `src/step/metrics.py` provides these metrics.
 | `data/` | Compact Limb Xenium and Perturb-map inputs, descriptions and checksums |
 | `docs/data_format.md` | Preparing and loading your own data |
 | `tests/` | Neural transport, editing, persistence and interface checks |
-
-Run `python -m unittest discover -s tests -v` to check the implementation.
-Generated outputs are written outside the source/data folders and ignored by Git.
-
-
